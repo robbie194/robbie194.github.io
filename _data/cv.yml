@@ -1,9 +1,11 @@
 cv:
-  name: Yunfei Tian
+  name: Yunfei Tian (田云飞)
   label: Ph.D. student, Department of Electrical and Computer Engineering, HKU
   email: yunfei.tian@connect.hku.hk
   location: Hong Kong SAR, China
   image: /assets/img/prof_pic.jpg
+  languages: Mandarin (native), English (professional), Cantonese (beginner)
+  summary: Ph.D. student and imaging algorithm engineer working at the intersection of computational imaging, physiological sensing, and deployable AI vision systems.
 
   social_networks:
     - network: GitHub
@@ -62,25 +64,6 @@ cv:
           - Developed and integrated computer vision algorithms for smartphone cameras and intelligent manufacturing.
           - Led object detection and tracking algorithm work for Huawei Mate50, P60, and Mate60 camera features.
           - Built algorithms for semiconductor virtual metrology and wafer map image classification.
-
-    Research Experience:
-      - company: Nanjing University
-        position: Super-resolution microscopy imaging
-        location: Nanjing, China
-        start_date: 2017-10
-        end_date: 2018-12
-        highlights:
-          - Built a low-magnification, large-field-of-view microscopy imaging system.
-          - Implemented Fourier ptychographic imaging and deep learning based super-resolution methods.
-
-      - company: Nanjing University
-        position: Fiber-based single-pixel imaging
-        location: Nanjing, China
-        start_date: 2019-01
-        end_date: 2020-03
-        highlights:
-          - Used structured illumination and a fiber-optic single-pixel receiver for remote imaging.
-          - Combined pseudo-inverse reconstruction and compressed sensing to reduce acquisition cost.
 
     Skills:
       - name: Programming and engineering

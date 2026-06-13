@@ -1,5 +1,12 @@
 # Social links are rendered in the order defined here.
-cv_pdf: /assets/pdf/Yunfei_Tian_CV.pdf
 email: yunfei.tian@connect.hku.hk
 github_username: robbie194
 scholar_userid: Z10uYkAAAAAJ
+csdn:
+  logo: fa-solid fa-blog
+  title: CSDN Blog
+  url: https://blog.csdn.net/tyfwin?type=blog
+lofter:
+  logo: fa-solid fa-images
+  title: Lofter
+  url: https://robbie194.lofter.com/
