@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /publications/
-title: publications
+title: Publications
 description: selected publications in computational imaging, optical engineering, and AI sensing.
 nav: true
 nav_order: 2

@@ -1,0 +1,22 @@
+{% comment %}
+  Compact CV awards renderer.
+{% endcomment %}
+
+<div class="card-text font-weight-light cv-compact-list">
+  {% for entry in entries %}
+    {% capture date %}
+      {% if entry.date %}{{ entry.date | split: '-' | first }}{% endif %}
+    {% endcapture %}
+    <div class="cv-compact-item">
+      <h6 class="title font-weight-bold">
+        {% if date != '' %}{{ date | strip }}: {% endif %}{{ entry.title }}
+      </h6>
+      {% if entry.awarder %}
+        <div class="cv-compact-meta">{{ entry.awarder }}</div>
+      {% endif %}
+      {% if entry.summary %}
+        <div class="cv-compact-summary">{{ entry.summary | markdownify | remove: '<p>' | remove: '</p>' }}</div>
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>

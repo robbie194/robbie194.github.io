@@ -1,0 +1,47 @@
+{% comment %}
+  Compact CV education renderer.
+{% endcomment %}
+
+<div class="card-text font-weight-light cv-compact-list">
+  {% for entry in entries %}
+    {% capture start_date %}
+      {% if entry.start_date %}{{ entry.start_date }}{% elsif entry.startDate %}{{ entry.startDate }}{% endif %}
+    {% endcapture %}
+    {% capture end_date %}
+      {% if entry.end_date %}{{ entry.end_date }}{% elsif entry.endDate %}{{ entry.endDate }}{% endif %}
+    {% endcapture %}
+    {% assign start_year = start_date | split: '-' | first %}
+    {% assign end_year = end_date | split: '-' | first | default: 'Present' %}
+    {% capture date %}
+      {% if start_year != '' %}{{ start_year }} - {{ end_year }}{% endif %}
+    {% endcapture %}
+    {% capture study_type %}
+      {% if entry.studyType %}{{ entry.studyType }}{% elsif entry.degree %}{{ entry.degree }}{% endif %}
+    {% endcapture %}
+
+    <div class="cv-compact-item">
+      <h6 class="title font-weight-bold">
+        {% if date != '' %}{{ date | strip }}: {% endif %}{{ study_type | strip }}
+      </h6>
+      <div class="cv-compact-meta">
+        {{ entry.institution }}{% if entry.location %}, {{ entry.location }}{% endif %}
+      </div>
+      {% if entry.area %}
+        <div class="cv-compact-summary">{{ entry.area }}</div>
+      {% endif %}
+      {% if entry.score %}
+        <div class="cv-compact-summary">{{ entry.score }}</div>
+      {% endif %}
+      {% if entry.courses or entry.highlights %}
+        <div class="cv-compact-highlights">
+          {% for item in entry.courses %}
+            <div>{{ item }}</div>
+          {% endfor %}
+          {% for item in entry.highlights %}
+            <div>{{ item | markdownify | remove: '<p>' | remove: '</p>' }}</div>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>

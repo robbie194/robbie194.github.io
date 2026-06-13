@@ -5,7 +5,7 @@ cv:
   location: Hong Kong SAR, China
   image: /assets/img/prof_pic.jpg
   languages: Mandarin (native), English (professional), Cantonese (beginner)
-  summary: Ph.D. student and imaging algorithm engineer working at the intersection of computational imaging, physiological sensing, and deployable AI vision systems.
+  summary: Everything happens for the best.
 
   social_networks:
     - network: GitHub
@@ -81,4 +81,5 @@ cv:
         date: 2020
         awarder: Nanjing University
       - title: Huawei Mate50 project Excellent Team Award
+        date: 2022
         awarder: Huawei Technologies Co., Ltd.
