@@ -1,10 +1,9 @@
 cv:
   name: Yunfei Tian
-  label: Ph.D. student, Electrical and Electronic Engineering
-  email: tyfwin@smail.nju.edu.cn
+  label: Ph.D. student, Department of Electrical and Computer Engineering, HKU
+  email: yunfei.tian@connect.hku.hk
   location: Hong Kong SAR, China
   image: /assets/img/prof_pic.jpg
-  summary: Ph.D. student at The University of Hong Kong working on computational imaging, AI sensing, neuromorphic imaging, and real-time computer vision systems.
 
   social_networks:
     - network: GitHub
@@ -16,7 +15,7 @@ cv:
     Education:
       - institution: The University of Hong Kong
         location: Hong Kong SAR, China
-        area: Electrical and Electronic Engineering
+        area: Department of Electrical and Computer Engineering
         studyType: Ph.D.
         start_date: 2024
         end_date: present
@@ -82,86 +81,6 @@ cv:
         highlights:
           - Used structured illumination and a fiber-optic single-pixel receiver for remote imaging.
           - Combined pseudo-inverse reconstruction and compressed sensing to reduce acquisition cost.
-
-    Publications:
-      - title: Adaptive physiology-informed correction for reliable remote photoplethysmography heart-rate monitoring
-        authors:
-          - Yunfei Tian
-          - Shuo Li
-          - Yanmin Zhu
-          - Mohamed Elgendi
-          - Edmund Y. Lam
-        publisher: npj Digital Medicine
-        releaseDate: 2026-02
-        url: https://doi.org/10.1038/s41746-026-02386-y
-
-      - title: Metasurface-encoded single-pixel hyperspectral imaging
-        authors:
-          - Haitao Nie
-          - Yaping Zhao
-          - Yifei Zhang
-          - Yanmin Zhu
-          - Jingyan Chen
-          - Yunfei Tian
-          - Edmund Y. Lam
-        publisher: Advanced Photonics Research
-        releaseDate: 2026-01
-        url: https://doi.org/10.1002/adpr.202500181
-
-      - title: All-in-focus Fourier ptychography microscopy via 3D implicit neural representation
-        authors:
-          - Jingqian Wu
-          - Chutian Wang
-          - Shuo Zhu
-          - Yunfei Tian
-          - Edmund Y. Lam
-        publisher: Advanced Devices and Instrumentation
-        releaseDate: 2025-12
-        url: https://doi.org/10.34133/adi.0133
-
-      - title: Coherent lensless diffraction imaging via multicore fiber for label-efficient microplastics characteristic discrimination
-        authors:
-          - Yunfei Tian
-          - Rongzhou Chen
-          - Yanmin Zhu
-          - Jingyan Chen
-          - Edmund Y. Lam
-        publisher: Proceedings of SPIE
-        releaseDate: 2025-10
-        url: https://doi.org/10.1117/12.3073960
-
-      - title: Self-supervised defocus blur kernel estimation with symmetry and smoothness constraints
-        authors:
-          - Yunfei Tian
-          - Yunping Zhang
-          - Yuxing Li
-          - Shuo Zhu
-          - Edmund Y. Lam
-        publisher: Proceedings of SPIE
-        releaseDate: 2025-06
-        url: https://doi.org/10.1117/12.3062402
-
-      - title: A portable AI-powered rotifer-tracking system for in-situ water quality assessment
-        authors:
-          - Yunping Zhang
-          - Yunfei Tian
-          - Yuxing Li
-          - Edmund Y. Lam
-        publisher: Proceedings of SPIE
-        releaseDate: 2025-06
-        url: https://doi.org/10.1117/12.3062375
-
-      - title: Single-pixel imaging based on optical fibers
-        authors:
-          - Yunfei Tian
-          - Zixuan Ding
-          - Haogong Feng
-          - Runze Zhu
-          - Ye Chen
-          - Fei Xu
-          - Yanqing Lu
-        publisher: IEEE Photonics Journal
-        releaseDate: 2020
 
     Skills:
       - name: Programming and engineering
