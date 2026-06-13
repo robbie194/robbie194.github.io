@@ -2,8 +2,6 @@
 layout: about
 title: about
 permalink: /
-nav: true
-nav_order: 1
 subtitle: Ph.D. student in Electrical and Electronic Engineering, The University of Hong Kong
 
 profile:
