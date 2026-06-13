@@ -1,0 +1,13 @@
+github_users:
+  - robbie194
+
+repo_description_lines_max: 2
+
+github_repos:
+  - robbie194/FBI-DIP
+  - robbie194/DAP
+  - robbie194/lightmind_ar_green_ui
+  - robbie194/BubbleReduce
+  - robbie194/E-fibreSR
+  - robbie194/VoiceRecognize
+  - robbie194/Unsupervised-Segmentation-Cell-Images

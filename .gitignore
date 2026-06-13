@@ -1,0 +1,24 @@
+_site
+.bundle
+.DS_store
+.idea
+.jekyll-cache
+.jekyll-metadata
+.ruby-version
+.sass-cache
+.tweet-cache
+.venv
+assets/libs/
+assets/rendercv/rendercv_output/*.typ
+al-folio-upgrade-report.md
+node_modules/
+output/playwright/
+test-results/
+vendor
+
+# Local source materials. Public website copies live under assets/.
+CV-Yunfei Tian.pdf
+Yunfei Tian-Resume.pdf
+TSSSU Annex A(i) (2025 07 17) - filled-Yunfei.pdf
+face_pic.jpg
+补充说明.txt

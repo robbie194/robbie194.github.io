@@ -1,0 +1,134 @@
+cv:
+  name: Yunfei Tian
+  label: Ph.D. student, Electrical and Electronic Engineering
+  email: tyfwin@smail.nju.edu.cn
+  location: Hong Kong SAR, China
+  image: /assets/img/prof_pic.jpg
+  summary: Ph.D. student at The University of Hong Kong working on computational imaging, AI sensing, neuromorphic imaging, and real-time computer vision systems.
+
+  social_networks:
+    - network: GitHub
+      username: robbie194
+
+  sections:
+    Education:
+      - institution: The University of Hong Kong
+        location: Hong Kong SAR, China
+        area: Electrical and Electronic Engineering
+        studyType: Ph.D.
+        start_date: 2024
+        end_date: present
+        highlights:
+          - Research interests include computational imaging, health monitoring, and neuromorphic imaging.
+
+      - institution: Nanjing University
+        location: Nanjing, China
+        area: Optical Engineering
+        studyType: M.E.
+        start_date: 2017-09
+        end_date: 2020-06
+        score: "GPA: 4.5/5.0; rank: 2/43"
+        highlights:
+          - Research focused on computational imaging and super-resolution imaging.
+          - Published SCI/EI papers and obtained authorized patents.
+
+      - institution: Shandong University
+        location: Jinan, China
+        area: Optoelectronic Information Science and Engineering
+        studyType: B.E.
+        start_date: 2013-09
+        end_date: 2017-06
+        score: "GPA: 4.35/5.0; rank: 3/42"
+        highlights:
+          - Received international, national, and provincial honors.
+
+    Experience:
+      - company: CARIAD, Volkswagen Group China
+        position: Algorithm Engineer
+        location: China
+        start_date: 2023-09
+        end_date: 2024
+        highlights:
+          - Developed contactless in-cabin health monitoring algorithms using cockpit camera signals.
+          - Worked on face detection, facial keypoint detection, physiological signal processing, and health indicator estimation.
+
+      - company: Huawei Technologies Co., Ltd.
+        position: Algorithm Engineer
+        location: China
+        start_date: 2020-07
+        end_date: 2023-07
+        highlights:
+          - Developed and integrated computer vision algorithms for smartphone cameras and intelligent manufacturing.
+          - Led object detection and tracking algorithm work for Huawei Mate50, P60, and Mate60 camera features.
+          - Built algorithms for semiconductor virtual metrology and wafer map image classification.
+
+    Research Experience:
+      - company: Nanjing University
+        position: Super-resolution microscopy imaging
+        location: Nanjing, China
+        start_date: 2017-10
+        end_date: 2018-12
+        highlights:
+          - Built a low-magnification, large-field-of-view microscopy imaging system.
+          - Implemented Fourier ptychographic imaging and deep learning based super-resolution methods.
+
+      - company: Nanjing University
+        position: Fiber-based single-pixel imaging
+        location: Nanjing, China
+        start_date: 2019-01
+        end_date: 2020-03
+        highlights:
+          - Used structured illumination and a fiber-optic single-pixel receiver for remote imaging.
+          - Combined pseudo-inverse reconstruction and compressed sensing to reduce acquisition cost.
+
+    Publications:
+      - title: Self-supervised defocus blur kernel estimation with symmetry and smoothness constraints
+        authors:
+          - Yunfei Tian
+          - Yunping Zhang
+          - Yuxing Li
+          - Shuo Zhu
+          - Edmund Y. Lam
+        publisher: Proceedings of SPIE
+        releaseDate: 2025-06
+        url: https://doi.org/10.1117/12.3062402
+
+      - title: A portable AI-powered rotifer-tracking system for in-situ water quality assessment
+        authors:
+          - Yunping Zhang
+          - Yunfei Tian
+          - Yuxing Li
+          - Edmund Y. Lam
+        publisher: Proceedings of SPIE
+        releaseDate: 2025-06
+        url: https://doi.org/10.1117/12.3062375
+
+      - title: Single-pixel imaging based on optical fibers
+        authors:
+          - Yunfei Tian
+          - Zixuan Ding
+          - Haogong Feng
+          - Runze Zhu
+          - Ye Chen
+          - Fei Xu
+          - Yanqing Lu
+        publisher: IEEE Photonics Journal
+        releaseDate: 2020
+
+    Skills:
+      - name: Programming and engineering
+        keywords: Python, Matlab, C++, Linux, SQL, Git, Django, Kubernetes, Helm
+      - name: AI and computer vision
+        keywords: PyTorch, TensorFlow, OpenCV, object detection, segmentation, tracking, model quantization
+      - name: Optical and imaging systems
+        keywords: Computational imaging, Fourier ptychography, single-pixel imaging, Zemax, LabVIEW
+
+    Awards:
+      - title: National Scholarship
+        date: 2019
+        awarder: China
+      - title: Outstanding Graduate
+        date: 2020
+        awarder: Nanjing University
+      - title: Huawei Mate50 project Excellent Team Award
+        awarder: Huawei Technologies Co., Ltd.
