@@ -40,3 +40,9 @@ My current interests sit at the intersection of optical imaging, computer vision
 - Contactless physiological sensing and health monitoring
 - Optical system design with learning-based reconstruction
 - Real-time vision algorithms for embedded and edge platforms
+
+More links:
+
+- [Google Scholar](https://scholar.google.com/citations?hl=zh-CN&user=Z10uYkAAAAAJ)
+- [CSDN blog](https://blog.csdn.net/tyfwin?type=blog)
+- [Lofter](https://robbie194.lofter.com/)

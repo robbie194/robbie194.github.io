@@ -9,6 +9,8 @@ cv:
   social_networks:
     - network: GitHub
       username: robbie194
+    - network: Google Scholar
+      username: Z10uYkAAAAAJ
 
   sections:
     Education:
@@ -82,6 +84,52 @@ cv:
           - Combined pseudo-inverse reconstruction and compressed sensing to reduce acquisition cost.
 
     Publications:
+      - title: Adaptive physiology-informed correction for reliable remote photoplethysmography heart-rate monitoring
+        authors:
+          - Yunfei Tian
+          - Shuo Li
+          - Yanmin Zhu
+          - Mohamed Elgendi
+          - Edmund Y. Lam
+        publisher: npj Digital Medicine
+        releaseDate: 2026-02
+        url: https://doi.org/10.1038/s41746-026-02386-y
+
+      - title: Metasurface-encoded single-pixel hyperspectral imaging
+        authors:
+          - Haitao Nie
+          - Yaping Zhao
+          - Yifei Zhang
+          - Yanmin Zhu
+          - Jingyan Chen
+          - Yunfei Tian
+          - Edmund Y. Lam
+        publisher: Advanced Photonics Research
+        releaseDate: 2026-01
+        url: https://doi.org/10.1002/adpr.202500181
+
+      - title: All-in-focus Fourier ptychography microscopy via 3D implicit neural representation
+        authors:
+          - Jingqian Wu
+          - Chutian Wang
+          - Shuo Zhu
+          - Yunfei Tian
+          - Edmund Y. Lam
+        publisher: Advanced Devices and Instrumentation
+        releaseDate: 2025-12
+        url: https://doi.org/10.34133/adi.0133
+
+      - title: Coherent lensless diffraction imaging via multicore fiber for label-efficient microplastics characteristic discrimination
+        authors:
+          - Yunfei Tian
+          - Rongzhou Chen
+          - Yanmin Zhu
+          - Jingyan Chen
+          - Edmund Y. Lam
+        publisher: Proceedings of SPIE
+        releaseDate: 2025-10
+        url: https://doi.org/10.1117/12.3073960
+
       - title: Self-supervised defocus blur kernel estimation with symmetry and smoothness constraints
         authors:
           - Yunfei Tian
