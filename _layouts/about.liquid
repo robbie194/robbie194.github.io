@@ -16,15 +16,38 @@ layout: default
 
   <article>
     <style>
+      .social .contact-icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.45rem;
+      }
+
       .social .contact-icons a {
         display: inline-flex;
         align-items: center;
         justify-content: center;
+        width: 4rem;
+        height: 4rem;
+        line-height: 1;
+        vertical-align: middle;
+      }
+
+      .social .contact-icons a i {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 4rem;
         height: 4rem;
         line-height: 1;
       }
 
+      .social .contact-icons a i::before {
+        line-height: 1;
+      }
+
       .social .contact-icons a img.social-logo-img {
+        display: block;
         width: 3.6rem;
         height: 3.6rem;
         margin-bottom: 0;
