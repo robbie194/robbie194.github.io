@@ -71,20 +71,50 @@ cv:
           - Built algorithms for semiconductor virtual metrology and wafer map image classification.
 
     Skills:
-      - name: Programming and engineering
-        keywords: Python, Matlab, C++, Linux, SQL, Git, Django, Kubernetes, Helm
-      - name: AI and computer vision
-        keywords: PyTorch, TensorFlow, OpenCV, object detection, segmentation, tracking, model quantization
-      - name: Optical and imaging systems
-        keywords: Computational imaging, Fourier ptychography, single-pixel imaging, Zemax, LabVIEW
+      - name: Programming languages
+        keywords: Python, Matlab, C++
+      - name: Deep learning and computer vision
+        keywords: PyTorch, TensorFlow, OpenCV
+      - name: Engineering tools
+        keywords: Linux, JMESPath, SQL, Kubernetes, Helm, Git, Django
+      - name: Software
+        keywords: Zemax, LabVIEW, Photoshop, Premiere, Lightroom, Office
+      - name: Embedded and SoC development
+        keywords: 51, MSP430, STM32, Arduino, Android phones
 
     Awards:
       - title: National Scholarship
         date: 2019
         awarder: China
+        summary: National-level honor.
+      - title: Second Prize, International College Students ICAN Innovation and Entrepreneurship Competition
+        date: 2016
+        awarder: ICAN
+        summary: International-level honor.
+      - title: Second Prize, China Robot Competition
+        date: 2015
+        awarder: China Robot Competition
+        summary: National-level honor.
+      - title: First Prize, Shandong Province Undergraduate Electronic Design Contest
+        date: 2015
+        awarder: Shandong Province
+        summary: Province-level honor.
       - title: Outstanding Graduate
         date: 2020
         awarder: Nanjing University
+        summary: University-level honor; ranked 3/43.
+      - title: First-class Scholarship
+        date: 2017, 2018, 2019
+        awarder: Nanjing University
+        summary: University-level honor; ranked 2/43; received three times.
+      - title: National Inspirational Scholarship
+        date: 2016
+        awarder: China
+        summary: National-level honor.
+      - title: Tomorrow's Star
+        awarder: Huawei Technologies Co., Ltd.
+      - title: Overcoming Difficulties Award
+        awarder: Huawei Technologies Co., Ltd.
       - title: Huawei Mate50 project Excellent Team Award
         date: 2022
         awarder: Huawei Technologies Co., Ltd.
