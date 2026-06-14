@@ -31,7 +31,7 @@ Before joining HKU, I worked as an algorithm engineer at [Huawei Technologies Co
 
 I also worked at [CARIAD, Volkswagen Group China](https://cariad.technology/) on contactless in-cabin health monitoring from cockpit camera signals, combining face analysis, physiological signal processing, and real-time health indicator estimation.
 
-I received my M.E. in Optical Engineering from [Nanjing University](https://www.nju.edu.cn/), advised by [Prof. Fei Xu](https://eng.nju.edu.cn/xf/main.psp), and my B.E. in Optoelectronic Information Science and Engineering from [Shandong University](https://www.sdu.edu.cn/), with earlier work in Fourier ptychographic microscopy, super-resolution microscopy, and fiber-based single-pixel imaging.
+I received my M.E. in Optical Engineering from [Nanjing University](https://www.nju.edu.cn/), supervised by [Prof. Fei Xu](https://eng.nju.edu.cn/xf/main.psp), and my B.E. in Optoelectronic Information Science and Engineering from [Shandong University](https://www.sdu.edu.cn/), with earlier work in Fourier ptychographic microscopy, super-resolution microscopy, and fiber-based single-pixel imaging.
 
 ## Current Interests
 
