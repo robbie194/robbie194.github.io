@@ -76,6 +76,46 @@
         margin-top: 0.35rem;
         font-size: 0.9rem;
       }
+
+      .cv .cv-entry-with-logo {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.9rem;
+      }
+
+      .cv .cv-entry-logo-wrap {
+        flex: 0 0 3rem;
+        width: 3rem;
+        margin-top: 0.1rem;
+        text-align: center;
+      }
+
+      .cv .cv-entry-logo {
+        max-width: 3rem;
+        max-height: 3rem;
+        object-fit: contain;
+      }
+
+      .cv .cv-entry-body {
+        min-width: 0;
+        flex: 1 1 auto;
+      }
+
+      @media (max-width: 575.98px) {
+        .cv .cv-entry-with-logo {
+          gap: 0.7rem;
+        }
+
+        .cv .cv-entry-logo-wrap {
+          flex-basis: 2.5rem;
+          width: 2.5rem;
+        }
+
+        .cv .cv-entry-logo {
+          max-width: 2.5rem;
+          max-height: 2.5rem;
+        }
+      }
     </style>
     <div class="cv">
       {% comment %} Determine which CV format to render {% endcomment %}

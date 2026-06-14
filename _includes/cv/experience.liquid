@@ -19,23 +19,30 @@
       {% if entry.name %}{{ entry.name }}{% elsif entry.company %}{{ entry.company }}{% elsif entry.organization %}{{ entry.organization }}{% endif %}
     {% endcapture %}
 
-    <div class="cv-compact-item">
-      <h6 class="title font-weight-bold">
-        {% if date != '' %}{{ date | strip }}: {% endif %}{{ entry.position }}
-      </h6>
-      <div class="cv-compact-meta">
-        {{ company_name | strip }}{% if entry.location %}, {{ entry.location }}{% endif %}
-      </div>
-      {% if entry.summary %}
-        <div class="cv-compact-summary">{{ entry.summary | markdownify | remove: '<p>' | remove: '</p>' }}</div>
-      {% endif %}
-      {% if entry.highlights %}
-        <div class="cv-compact-highlights">
-          {% for item in entry.highlights %}
-            <div>{{ item | markdownify | remove: '<p>' | remove: '</p>' }}</div>
-          {% endfor %}
+    <div class="cv-compact-item cv-entry-with-logo">
+      {% if entry.logo %}
+        <div class="cv-entry-logo-wrap">
+          <img class="cv-entry-logo" src="{{ entry.logo | relative_url }}" alt="{{ company_name | strip }} logo">
         </div>
       {% endif %}
+      <div class="cv-entry-body">
+        <h6 class="title font-weight-bold">
+          {% if date != '' %}{{ date | strip }}: {% endif %}{{ entry.position }}
+        </h6>
+        <div class="cv-compact-meta">
+          {{ company_name | strip }}{% if entry.location %}, {{ entry.location }}{% endif %}
+        </div>
+        {% if entry.summary %}
+          <div class="cv-compact-summary">{{ entry.summary | markdownify | remove: '<p>' | remove: '</p>' }}</div>
+        {% endif %}
+        {% if entry.highlights %}
+          <div class="cv-compact-highlights">
+            {% for item in entry.highlights %}
+              <div>{{ item | markdownify | remove: '<p>' | remove: '</p>' }}</div>
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
     </div>
   {% endfor %}
 </div>

@@ -16,6 +16,7 @@ cv:
   sections:
     Education:
       - institution: The University of Hong Kong
+        logo: /assets/img/logos/hku-logo.jpg
         location: Hong Kong SAR, China
         area: Department of Electrical and Computer Engineering
         studyType: Ph.D.
@@ -25,6 +26,7 @@ cv:
           - Research interests include computational imaging, health monitoring, and neuromorphic imaging.
 
       - institution: Nanjing University
+        logo: /assets/img/logos/nju-logo.svg
         location: Nanjing, China
         area: Optical Engineering
         studyType: M.E.
@@ -36,6 +38,7 @@ cv:
           - Published SCI/EI papers and obtained authorized patents.
 
       - institution: Shandong University
+        logo: /assets/img/logos/sdu-logo.png
         location: Jinan, China
         area: Optoelectronic Information Science and Engineering
         studyType: B.E.
@@ -47,6 +50,7 @@ cv:
 
     Experience:
       - company: CARIAD, Volkswagen Group China
+        logo: /assets/img/logos/vgc-logo.png
         position: Algorithm Engineer
         location: China
         start_date: 2023-09
@@ -56,6 +60,7 @@ cv:
           - Worked on face detection, facial keypoint detection, physiological signal processing, and health indicator estimation.
 
       - company: Huawei Technologies Co., Ltd.
+        logo: /assets/img/logos/huawei-logo.png
         position: Algorithm Engineer
         location: China
         start_date: 2020-07

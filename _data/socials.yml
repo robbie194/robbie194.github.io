@@ -4,9 +4,11 @@ github_username: robbie194
 scholar_userid: Z10uYkAAAAAJ
 csdn:
   logo: fa-solid fa-blog
+  image: /assets/img/logos/csdn-logo.png
   title: CSDN Blog
   url: https://blog.csdn.net/tyfwin?type=blog
 lofter:
   logo: fa-solid fa-images
+  image: /assets/img/logos/lofter-logo.png
   title: Lofter
   url: https://robbie194.lofter.com/

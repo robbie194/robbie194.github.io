@@ -15,6 +15,15 @@ layout: default
   </header>
 
   <article>
+    <style>
+      .social .contact-icons img.social-logo-img {
+        width: 1.35rem;
+        height: 1.35rem;
+        object-fit: contain;
+        vertical-align: -0.18em;
+      }
+    </style>
+
     {% if page.profile %}
       <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
         {% if page.profile.image %}
@@ -65,7 +74,7 @@ layout: default
     <!-- Social -->
     {% if page.social %}
       <div class="social">
-        <div class="contact-icons">{% social_links %}</div>
+        <div class="contact-icons">{% include social.liquid %}</div>
 
         <div class="contact-note">{{ site.contact_note }}</div>
       </div>

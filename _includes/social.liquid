@@ -1,0 +1,57 @@
+{% assign socials = site.data.socials %}
+
+{% if socials.email %}
+  <a href="mailto:{{ socials.email }}" title="Email"><i class="fa-solid fa-envelope"></i></a>
+{% endif %}
+
+{% if socials.github_username %}
+  <a
+    href="https://github.com/{{ socials.github_username }}"
+    title="GitHub"
+    rel="external nofollow noopener"
+    target="_blank"
+  >
+    <i class="fa-brands fa-github"></i>
+  </a>
+{% endif %}
+
+{% if socials.scholar_userid %}
+  <a
+    href="https://scholar.google.com/citations?user={{ socials.scholar_userid }}"
+    title="Google Scholar"
+    rel="external nofollow noopener"
+    target="_blank"
+  >
+    <i class="ai ai-google-scholar"></i>
+  </a>
+{% endif %}
+
+{% if socials.csdn and socials.csdn.url %}
+  <a
+    href="{{ socials.csdn.url }}"
+    title="{{ socials.csdn.title | default: 'CSDN Blog' }}"
+    rel="external nofollow noopener"
+    target="_blank"
+  >
+    {% if socials.csdn.image %}
+      <img class="social-logo-img" src="{{ socials.csdn.image | relative_url }}" alt="{{ socials.csdn.title | default: 'CSDN Blog' }}">
+    {% else %}
+      <i class="{{ socials.csdn.logo }}"></i>
+    {% endif %}
+  </a>
+{% endif %}
+
+{% if socials.lofter and socials.lofter.url %}
+  <a
+    href="{{ socials.lofter.url }}"
+    title="{{ socials.lofter.title | default: 'Lofter' }}"
+    rel="external nofollow noopener"
+    target="_blank"
+  >
+    {% if socials.lofter.image %}
+      <img class="social-logo-img" src="{{ socials.lofter.image | relative_url }}" alt="{{ socials.lofter.title | default: 'Lofter' }}">
+    {% else %}
+      <i class="{{ socials.lofter.logo }}"></i>
+    {% endif %}
+  </a>
+{% endif %}
