@@ -83,14 +83,35 @@ cv:
         keywords: 51, MSP430, STM32, Arduino, Android phones
 
     Awards:
+      - title: Huawei Mate50 project Excellent Team Award
+        date: 2022
+        awarder: Huawei Technologies Co., Ltd.
+      - title: Tomorrow's Star
+        date: 2021
+        awarder: Huawei Technologies Co., Ltd.
+      - title: Overcoming Difficulties Award
+        date: 2021
+        awarder: Huawei Technologies Co., Ltd.
+      - title: Outstanding Graduate
+        date: 2020
+        awarder: Nanjing University
+        summary: University-level honor; ranked 3/43.
       - title: National Scholarship
         date: 2019
         awarder: China
         summary: National-level honor.
+      - title: First-class Scholarship
+        date: 2017, 2018, 2019
+        awarder: Nanjing University
+        summary: University-level honor; ranked 2/43; received three times.
       - title: Second Prize, International College Students ICAN Innovation and Entrepreneurship Competition
         date: 2016
         awarder: ICAN
         summary: International-level honor.
+      - title: National Inspirational Scholarship
+        date: 2016
+        awarder: China
+        summary: National-level honor.
       - title: Second Prize, China Robot Competition
         date: 2015
         awarder: China Robot Competition
@@ -99,22 +120,3 @@ cv:
         date: 2015
         awarder: Shandong Province
         summary: Province-level honor.
-      - title: Outstanding Graduate
-        date: 2020
-        awarder: Nanjing University
-        summary: University-level honor; ranked 3/43.
-      - title: First-class Scholarship
-        date: 2017, 2018, 2019
-        awarder: Nanjing University
-        summary: University-level honor; ranked 2/43; received three times.
-      - title: National Inspirational Scholarship
-        date: 2016
-        awarder: China
-        summary: National-level honor.
-      - title: Tomorrow's Star
-        awarder: Huawei Technologies Co., Ltd.
-      - title: Overcoming Difficulties Award
-        awarder: Huawei Technologies Co., Ltd.
-      - title: Huawei Mate50 project Excellent Team Award
-        date: 2022
-        awarder: Huawei Technologies Co., Ltd.
