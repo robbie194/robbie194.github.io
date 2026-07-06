@@ -1,7 +1,9 @@
 cv:
   name: Yunfei Tian (田云飞)
   label: Ph.D. student, Department of Electrical and Computer Engineering, HKU
-  email: tyfwin194@gmail.com
+  email:
+    user: tyfwin194
+    domain: gmail.com
   location: Hong Kong SAR, China
   image: /assets/img/prof_pic.jpg
   languages: Mandarin (native), English (professional), Cantonese (beginner)

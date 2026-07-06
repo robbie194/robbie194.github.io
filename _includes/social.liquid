@@ -1,7 +1,10 @@
 {% assign socials = site.data.socials %}
 
-{% if socials.email %}
-  <a href="mailto:{{ socials.email }}" title="Email"><i class="fa-solid fa-envelope"></i></a>
+{% assign email_user = socials.email.user | default: socials.email_user %}
+{% assign email_domain = socials.email.domain | default: socials.email_domain %}
+
+{% if email_user and email_domain %}
+  <a href="#" title="Email" data-email-user="{{ email_user }}" data-email-domain="{{ email_domain }}" data-email-link="true"><i class="fa-solid fa-envelope"></i></a>
 {% endif %}
 
 {% if socials.github_username %}
@@ -68,3 +71,5 @@
     {% endif %}
   </a>
 {% endif %}
+
+{% include email-obfuscate.liquid %}

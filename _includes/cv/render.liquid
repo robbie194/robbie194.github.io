@@ -138,6 +138,8 @@
       {% if render_rendercv and site.data.cv and site.data.cv.cv %}
         {% comment %} RenderCV format {% endcomment %}
         {% assign cv = site.data.cv.cv %}
+        {% assign cv_email_user = cv.email.user | default: cv.email_user %}
+        {% assign cv_email_domain = cv.email.domain | default: cv.email_domain %}
 
         <!-- Header/General Information -->
         {% if cv.name or cv.label or cv.location or cv.email or cv.phone or cv.website %}
@@ -150,10 +152,12 @@
                   <td class="p-1 pl-2 font-weight-light">{{ cv.name }}</td>
                 </tr>
               {% endif %}
-              {% if cv.email %}
+              {% if cv_email_user and cv_email_domain %}
                 <tr>
                   <td class="p-1 pr-2 font-weight-bold"><b>Email</b></td>
-                  <td class="p-1 pl-2 font-weight-light">{{ cv.email }}</td>
+                  <td class="p-1 pl-2 font-weight-light">
+                    <span data-email-user="{{ cv_email_user }}" data-email-domain="{{ cv_email_domain }}" data-email-display="true"></span>
+                  </td>
                 </tr>
               {% endif %}
               {% if cv.languages %}
@@ -462,5 +466,6 @@
         <p>No CV data found. Please configure either RenderCV (cv.yml) or JSONResume (resume.json) data.</p>
       {% endif %}
     </div>
+    {% include email-obfuscate.liquid %}
   </article>
 </div>

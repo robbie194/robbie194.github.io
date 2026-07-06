@@ -1,0 +1,27 @@
+<script>
+  (function () {
+    if (window.__emailObfuscationLoaded) return;
+    window.__emailObfuscationLoaded = true;
+
+    function hydrateEmails() {
+      var at = String.fromCharCode(64);
+      document.querySelectorAll("[data-email-user][data-email-domain]").forEach(function (element) {
+        var email = element.getAttribute("data-email-user") + at + element.getAttribute("data-email-domain");
+
+        if (element.getAttribute("data-email-display") === "true") {
+          element.textContent = email;
+        }
+
+        if (element.tagName.toLowerCase() === "a" || element.getAttribute("data-email-link") === "true") {
+          element.setAttribute("href", "mailto:" + email);
+        }
+      });
+    }
+
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", hydrateEmails);
+    } else {
+      hydrateEmails();
+    }
+  })();
+</script>
