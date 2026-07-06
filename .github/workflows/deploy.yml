@@ -12,7 +12,7 @@ permissions:
 
 concurrency:
   group: pages
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   build:
@@ -67,6 +67,9 @@ jobs:
     needs: build
 
     steps:
+      - name: Wait for Pages deployment slot
+        run: sleep 120
+
       - name: Deploy to GitHub Pages
         id: deployment
         continue-on-error: true
@@ -74,7 +77,7 @@ jobs:
 
       - name: Wait before retry
         if: steps.deployment.outcome == 'failure'
-        run: sleep 60
+        run: sleep 180
 
       - name: Retry deploy to GitHub Pages
         if: steps.deployment.outcome == 'failure'
