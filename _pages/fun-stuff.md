@@ -151,7 +151,7 @@ nav_order: 5
 
     <section class="fun-tab-panel" id="fun-panel-honors">
       <p class="fun-tab-note">
-        I may not have your <em>Nature</em> papers, best paper awards, or grand academic trophies, but I do have a security guard certificate, a career planner certificate, and a few other side-quest honors that you may not have either.
+        There is a lot you have that I do not; there is also a little I have that you may not.
       </p>
 
       <div class="fun-honor-grid">
