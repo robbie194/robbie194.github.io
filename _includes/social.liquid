@@ -55,3 +55,16 @@
     {% endif %}
   </a>
 {% endif %}
+
+{% if socials.lightmind and socials.lightmind.url %}
+  <a
+    href="{{ socials.lightmind.url }}"
+    title="{{ socials.lightmind.title | default: 'Light Mind' }}"
+    rel="external nofollow noopener"
+    target="_blank"
+  >
+    {% if socials.lightmind.image %}
+      <img class="social-logo-img" src="{{ socials.lightmind.image | relative_url }}" alt="{{ socials.lightmind.title | default: 'Light Mind' }}">
+    {% endif %}
+  </a>
+{% endif %}
