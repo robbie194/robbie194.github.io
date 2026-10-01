@@ -3,6 +3,7 @@ layout: about
 title: About
 permalink: /
 subtitle:
+  Ph.D. Student in Electrical and Computer Engineering at The University of Hong Kong (HKU) · M.E. in Optical Engineering from Nanjing University (NJU)
 
 profile:
   align: right
@@ -25,7 +26,7 @@ latest_posts:
   limit: 3
 ---
 
-I am a Ph.D. student in the [Department of Electrical and Computer Engineering](https://www.eee.hku.hk/) at [The University of Hong Kong (HKU)](https://www.hku.hk/), advised by [Prof. Edmund Y. Lam](https://www.eee.hku.hk/~elam/).
+I am **Yunfei Tian (田云飞)**, a Ph.D. student in the [Department of Electrical and Computer Engineering](https://www.eee.hku.hk/) at [The University of Hong Kong (HKU)](https://www.hku.hk/), advised by [Prof. Edmund Y. Lam](https://www.eee.hku.hk/~elam/).
 
 Before joining HKU, I worked as an algorithm engineer at [Huawei Technologies Co., Ltd.](https://www.huawei.com/) on smartphone camera vision and intelligent manufacturing, including object detection and tracking, semiconductor virtual metrology, and wafer map classification.
 
