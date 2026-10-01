@@ -54,6 +54,18 @@ nav_order: 5
     display: block;
   }
 
+  #fun-tab-travel:checked ~ .fun-tab-labels label[for="fun-tab-travel"],
+  #fun-tab-alipay:checked ~ .fun-tab-labels label[for="fun-tab-alipay"] {
+    background: var(--global-bg-color);
+    border-color: var(--global-theme-color);
+    color: var(--global-theme-color);
+  }
+
+  #fun-tab-travel:checked ~ .fun-tab-panels #fun-panel-travel,
+  #fun-tab-alipay:checked ~ .fun-tab-panels #fun-panel-alipay {
+    display: block;
+  }
+
   .fun-tab-note {
     color: var(--global-text-color-light);
     font-size: 0.98rem;
@@ -88,6 +100,159 @@ nav_order: 5
     text-align: center;
   }
 
+  .fun-carousel {
+    margin: 1.2rem auto 0;
+    max-width: 860px;
+  }
+
+  .fun-carousel-viewport {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 8px;
+    background: var(--global-card-bg-color);
+    cursor: grab;
+    touch-action: pan-y;
+  }
+
+  .fun-carousel-viewport:active {
+    cursor: grabbing;
+  }
+
+  .fun-carousel-track {
+    display: flex;
+    transition: transform 0.35s ease;
+  }
+
+  .fun-carousel-slide {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 0 100%;
+    align-items: center;
+    justify-content: center;
+    height: min(620px, 70vw);
+    min-height: 260px;
+    margin: 0;
+    padding: 0.75rem;
+  }
+
+  .fun-carousel-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    object-fit: contain;
+  }
+
+  .fun-carousel-control {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.48);
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.7rem;
+    line-height: 1;
+    transform: translateY(-50%);
+  }
+
+  .fun-carousel-control:hover,
+  .fun-carousel-control:focus {
+    background: rgba(0, 0, 0, 0.7);
+  }
+
+  .fun-carousel-prev {
+    left: 0.65rem;
+  }
+
+  .fun-carousel-next {
+    right: 0.65rem;
+  }
+
+  .fun-carousel-meta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    margin-top: 0.85rem;
+  }
+
+  .fun-carousel-dots {
+    display: flex;
+    gap: 0.35rem;
+  }
+
+  .fun-carousel-dot {
+    width: 0.55rem;
+    height: 0.55rem;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: var(--global-divider-color);
+    cursor: pointer;
+  }
+
+  .fun-carousel-dot[aria-current="true"] {
+    background: var(--global-theme-color);
+  }
+
+  .fun-carousel-counter {
+    margin: 0;
+    color: var(--global-text-color-light);
+    font-size: 0.9rem;
+  }
+
+  .fun-single-item {
+    max-width: 520px;
+    margin: 1.2rem auto 0;
+    padding: 0.8rem;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 8px;
+    background: var(--global-card-bg-color);
+  }
+
+  .fun-single-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 680px;
+    object-fit: contain;
+  }
+
+  .fun-single-item figcaption {
+    color: var(--global-text-color-light);
+    font-size: 0.88rem;
+    margin-top: 0.65rem;
+    text-align: center;
+  }
+
+  @media (max-width: 767px) {
+    .fun-carousel-slide {
+      height: min(520px, 86vw);
+      min-height: 240px;
+      padding: 0.45rem;
+    }
+
+    .fun-carousel-control {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .fun-carousel-track {
+      transition: none;
+    }
+  }
+
   @media (min-width: 768px) {
     .fun-honor-item img {
       height: 260px;
@@ -98,10 +263,14 @@ nav_order: 5
 <div class="fun-tabs">
   <input type="radio" id="fun-tab-paper" name="fun-tabs" checked>
   <input type="radio" id="fun-tab-honors" name="fun-tabs">
+  <input type="radio" id="fun-tab-travel" name="fun-tabs">
+  <input type="radio" id="fun-tab-alipay" name="fun-tabs">
 
   <div class="fun-tab-labels" role="tablist" aria-label="Fun Stuff sections">
     <label for="fun-tab-paper" role="tab">SHIT paper</label>
     <label for="fun-tab-honors" role="tab">Special Honors</label>
+    <label for="fun-tab-travel" role="tab">Travel Magazine</label>
+    <label for="fun-tab-alipay" role="tab">Alipay Ant Forest</label>
   </div>
 
   <div class="fun-tab-panels">
@@ -185,5 +354,117 @@ nav_order: 5
         </figure>
       </div>
     </section>
+
+    <section class="fun-tab-panel" id="fun-panel-travel">
+      <p class="fun-tab-note">
+        A small travel magazine about food, places, and the details that make a journey memorable.
+      </p>
+
+      <div class="fun-carousel" data-fun-carousel>
+        <div class="fun-carousel-viewport" tabindex="0" aria-label="Travel magazine image gallery">
+          <div class="fun-carousel-track">
+            {% assign travel_images = "1.jpg|2.jpg|3.jpg|4.jpg" | split: "|" %}
+            {% for image in travel_images %}
+            <figure class="fun-carousel-slide">
+              <img src="{{ '/assets/img/fun-stuff/travel-magazine/' | append: image | relative_url }}" alt="Travel magazine spread {{ forloop.index }}">
+            </figure>
+            {% endfor %}
+          </div>
+          <button class="fun-carousel-control fun-carousel-prev" type="button" data-carousel-prev aria-label="Previous travel magazine image">&#8249;</button>
+          <button class="fun-carousel-control fun-carousel-next" type="button" data-carousel-next aria-label="Next travel magazine image">&#8250;</button>
+        </div>
+
+        <div class="fun-carousel-meta">
+          <div class="fun-carousel-dots" role="tablist" aria-label="Travel magazine images">
+            <button class="fun-carousel-dot" type="button" data-carousel-dot="0" aria-label="Show image 1" aria-current="true"></button>
+            <button class="fun-carousel-dot" type="button" data-carousel-dot="1" aria-label="Show image 2" aria-current="false"></button>
+            <button class="fun-carousel-dot" type="button" data-carousel-dot="2" aria-label="Show image 3" aria-current="false"></button>
+            <button class="fun-carousel-dot" type="button" data-carousel-dot="3" aria-label="Show image 4" aria-current="false"></button>
+          </div>
+          <p class="fun-carousel-counter" aria-live="polite">Image 1 of 4</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="fun-tab-panel" id="fun-panel-alipay">
+      <p class="fun-tab-note">
+        A small digital forest milestone: a Populus euphratica in Alipay Ant Forest, commemorated with its ten-year certificate.
+      </p>
+
+      <figure class="fun-single-item">
+        <img src="{{ '/assets/img/fun-stuff/alipay-populus-euphratica.jpg' | relative_url }}" alt="Ten-year Populus euphratica certificate from Alipay Ant Forest">
+        <figcaption>Ten-Year Ant Forest Certificate</figcaption>
+      </figure>
+    </section>
   </div>
 </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('[data-fun-carousel]').forEach(function (carousel) {
+      var viewport = carousel.querySelector('.fun-carousel-viewport');
+      var track = carousel.querySelector('.fun-carousel-track');
+      var slides = carousel.querySelectorAll('.fun-carousel-slide');
+      var dots = carousel.querySelectorAll('.fun-carousel-dot');
+      var counter = carousel.querySelector('.fun-carousel-counter');
+      var index = 0;
+      var startX = null;
+
+      function render(nextIndex) {
+        index = (nextIndex + slides.length) % slides.length;
+        track.style.transform = 'translateX(-' + (index * 100) + '%)';
+        dots.forEach(function (dot, dotIndex) {
+          dot.setAttribute('aria-current', dotIndex === index ? 'true' : 'false');
+        });
+        counter.textContent = 'Image ' + (index + 1) + ' of ' + slides.length;
+      }
+
+      carousel.querySelector('[data-carousel-prev]').addEventListener('click', function () {
+        render(index - 1);
+      });
+
+      carousel.querySelector('[data-carousel-next]').addEventListener('click', function () {
+        render(index + 1);
+      });
+
+      dots.forEach(function (dot) {
+        dot.addEventListener('click', function () {
+          render(Number(dot.getAttribute('data-carousel-dot')));
+        });
+      });
+
+      viewport.addEventListener('pointerdown', function (event) {
+        if (event.pointerType === 'mouse' && event.button !== 0) {
+          return;
+        }
+        startX = event.clientX;
+        viewport.setPointerCapture(event.pointerId);
+      });
+
+      viewport.addEventListener('pointerup', function (event) {
+        if (startX === null) {
+          return;
+        }
+        var distance = event.clientX - startX;
+        startX = null;
+        if (Math.abs(distance) > 40) {
+          render(index + (distance < 0 ? 1 : -1));
+        }
+      });
+
+      viewport.addEventListener('pointercancel', function () {
+        startX = null;
+      });
+
+      viewport.addEventListener('keydown', function (event) {
+        if (event.key === 'ArrowLeft') {
+          event.preventDefault();
+          render(index - 1);
+        } else if (event.key === 'ArrowRight') {
+          event.preventDefault();
+          render(index + 1);
+        }
+      });
+    });
+  });
+</script>
