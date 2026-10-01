@@ -54,18 +54,6 @@ nav_order: 5
     display: block;
   }
 
-  #fun-tab-travel:checked ~ .fun-tab-labels label[for="fun-tab-travel"],
-  #fun-tab-alipay:checked ~ .fun-tab-labels label[for="fun-tab-alipay"] {
-    background: var(--global-bg-color);
-    border-color: var(--global-theme-color);
-    color: var(--global-theme-color);
-  }
-
-  #fun-tab-travel:checked ~ .fun-tab-panels #fun-panel-travel,
-  #fun-tab-alipay:checked ~ .fun-tab-panels #fun-panel-alipay {
-    display: block;
-  }
-
   .fun-tab-note {
     color: var(--global-text-color-light);
     font-size: 0.98rem;
@@ -101,16 +89,12 @@ nav_order: 5
   }
 
   .fun-carousel {
-    margin: 1.2rem auto 0;
-    max-width: 860px;
+    min-width: 0;
   }
 
   .fun-carousel-viewport {
     position: relative;
     overflow: hidden;
-    border: 1px solid var(--global-divider-color);
-    border-radius: 8px;
-    background: var(--global-card-bg-color);
     cursor: grab;
     touch-action: pan-y;
   }
@@ -130,18 +114,9 @@ nav_order: 5
     flex: 0 0 100%;
     align-items: center;
     justify-content: center;
-    height: min(620px, 70vw);
-    min-height: 260px;
+    min-width: 0;
     margin: 0;
-    padding: 0.75rem;
-  }
-
-  .fun-carousel-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    border-radius: 4px;
-    object-fit: contain;
+    padding: 0;
   }
 
   .fun-carousel-control {
@@ -210,43 +185,6 @@ nav_order: 5
     font-size: 0.9rem;
   }
 
-  .fun-single-item {
-    max-width: 520px;
-    margin: 1.2rem auto 0;
-    padding: 0.8rem;
-    border: 1px solid var(--global-divider-color);
-    border-radius: 8px;
-    background: var(--global-card-bg-color);
-  }
-
-  .fun-single-item img {
-    display: block;
-    width: 100%;
-    height: auto;
-    max-height: 680px;
-    object-fit: contain;
-  }
-
-  .fun-single-item figcaption {
-    color: var(--global-text-color-light);
-    font-size: 0.88rem;
-    margin-top: 0.65rem;
-    text-align: center;
-  }
-
-  @media (max-width: 767px) {
-    .fun-carousel-slide {
-      height: min(520px, 86vw);
-      min-height: 240px;
-      padding: 0.45rem;
-    }
-
-    .fun-carousel-control {
-      width: 2rem;
-      height: 2rem;
-    }
-  }
-
   @media (prefers-reduced-motion: reduce) {
     .fun-carousel-track {
       transition: none;
@@ -263,14 +201,10 @@ nav_order: 5
 <div class="fun-tabs">
   <input type="radio" id="fun-tab-paper" name="fun-tabs" checked>
   <input type="radio" id="fun-tab-honors" name="fun-tabs">
-  <input type="radio" id="fun-tab-travel" name="fun-tabs">
-  <input type="radio" id="fun-tab-alipay" name="fun-tabs">
 
   <div class="fun-tab-labels" role="tablist" aria-label="Fun Stuff sections">
     <label for="fun-tab-paper" role="tab">SHIT paper</label>
     <label for="fun-tab-honors" role="tab">Special Honors</label>
-    <label for="fun-tab-travel" role="tab">Travel Magazine</label>
-    <label for="fun-tab-alipay" role="tab">Alipay Ant Forest</label>
   </div>
 
   <div class="fun-tab-panels">
@@ -352,49 +286,36 @@ nav_order: 5
           <img src="{{ '/assets/img/fun-stuff/english-club-persistence-award.jpg' | relative_url }}" alt="English club persistence award">
           <figcaption>English Club Persistence Award</figcaption>
         </figure>
-      </div>
-    </section>
-
-    <section class="fun-tab-panel" id="fun-panel-travel">
-      <p class="fun-tab-note">
-        A small travel magazine about food, places, and the details that make a journey memorable.
-      </p>
-
-      <div class="fun-carousel" data-fun-carousel>
-        <div class="fun-carousel-viewport" tabindex="0" aria-label="Travel magazine image gallery">
-          <div class="fun-carousel-track">
-            {% assign travel_images = "1.jpg|2.jpg|3.jpg|4.jpg" | split: "|" %}
-            {% for image in travel_images %}
-            <figure class="fun-carousel-slide">
-              <img src="{{ '/assets/img/fun-stuff/travel-magazine/' | append: image | relative_url }}" alt="Travel magazine spread {{ forloop.index }}">
-            </figure>
-            {% endfor %}
+        <figure class="fun-honor-item fun-carousel" data-fun-carousel>
+          <div class="fun-carousel-viewport" tabindex="0" aria-label="Article published in Journey Ahead magazine">
+            <div class="fun-carousel-track">
+              {% assign travel_images = "1.jpg|2.jpg|3.jpg|4.jpg" | split: "|" %}
+              {% for image in travel_images %}
+              <div class="fun-carousel-slide">
+                <img src="{{ '/assets/img/fun-stuff/travel-magazine/' | append: image | relative_url }}" alt="Journey Ahead magazine article, image {{ forloop.index }}" draggable="false">
+              </div>
+              {% endfor %}
+            </div>
+            <button class="fun-carousel-control fun-carousel-prev" type="button" data-carousel-prev aria-label="Previous travel magazine image">&#8249;</button>
+            <button class="fun-carousel-control fun-carousel-next" type="button" data-carousel-next aria-label="Next travel magazine image">&#8250;</button>
           </div>
-          <button class="fun-carousel-control fun-carousel-prev" type="button" data-carousel-prev aria-label="Previous travel magazine image">&#8249;</button>
-          <button class="fun-carousel-control fun-carousel-next" type="button" data-carousel-next aria-label="Next travel magazine image">&#8250;</button>
-        </div>
 
-        <div class="fun-carousel-meta">
-          <div class="fun-carousel-dots" role="tablist" aria-label="Travel magazine images">
-            <button class="fun-carousel-dot" type="button" data-carousel-dot="0" aria-label="Show image 1" aria-current="true"></button>
-            <button class="fun-carousel-dot" type="button" data-carousel-dot="1" aria-label="Show image 2" aria-current="false"></button>
-            <button class="fun-carousel-dot" type="button" data-carousel-dot="2" aria-label="Show image 3" aria-current="false"></button>
-            <button class="fun-carousel-dot" type="button" data-carousel-dot="3" aria-label="Show image 4" aria-current="false"></button>
+          <div class="fun-carousel-meta">
+            <div class="fun-carousel-dots" role="group" aria-label="Journey Ahead magazine images">
+              <button class="fun-carousel-dot" type="button" data-carousel-dot="0" aria-label="Show image 1" aria-current="true"></button>
+              <button class="fun-carousel-dot" type="button" data-carousel-dot="1" aria-label="Show image 2" aria-current="false"></button>
+              <button class="fun-carousel-dot" type="button" data-carousel-dot="2" aria-label="Show image 3" aria-current="false"></button>
+              <button class="fun-carousel-dot" type="button" data-carousel-dot="3" aria-label="Show image 4" aria-current="false"></button>
+            </div>
+            <p class="fun-carousel-counter" aria-live="polite">Image 1 of 4</p>
           </div>
-          <p class="fun-carousel-counter" aria-live="polite">Image 1 of 4</p>
-        </div>
+          <figcaption>Article Published in <em>Journey Ahead</em></figcaption>
+        </figure>
+        <figure class="fun-honor-item">
+          <img src="{{ '/assets/img/fun-stuff/alipay-populus-euphratica.jpg' | relative_url }}" alt="Ant Forest 10th anniversary certificate for planting a Populus euphratica tree">
+          <figcaption>Ant Forest Populus Euphratica Certificate</figcaption>
+        </figure>
       </div>
-    </section>
-
-    <section class="fun-tab-panel" id="fun-panel-alipay">
-      <p class="fun-tab-note">
-        A small digital forest milestone: a Populus euphratica in Alipay Ant Forest, commemorated with its ten-year certificate.
-      </p>
-
-      <figure class="fun-single-item">
-        <img src="{{ '/assets/img/fun-stuff/alipay-populus-euphratica.jpg' | relative_url }}" alt="Ten-year Populus euphratica certificate from Alipay Ant Forest">
-        <figcaption>Ten-Year Ant Forest Certificate</figcaption>
-      </figure>
     </section>
   </div>
 </div>
@@ -434,7 +355,7 @@ nav_order: 5
       });
 
       viewport.addEventListener('pointerdown', function (event) {
-        if (event.pointerType === 'mouse' && event.button !== 0) {
+        if (event.target.closest('button') || !event.isPrimary || event.button !== 0) {
           return;
         }
         startX = event.clientX;
