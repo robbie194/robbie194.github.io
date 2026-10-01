@@ -259,30 +259,6 @@ nav_order: 5
 
       <div class="fun-honor-grid">
         <figure class="fun-honor-item">
-          <img src="{{ '/assets/img/fun-stuff/security-guard-certificate.jpg' | relative_url }}" alt="Security guard certificate">
-          <figcaption>Security Guard Certificate</figcaption>
-        </figure>
-        <figure class="fun-honor-item">
-          <img src="{{ '/assets/img/fun-stuff/career-planner.jpg' | relative_url }}" alt="Career planner certificate">
-          <figcaption>Career Planner Certificate</figcaption>
-        </figure>
-        <figure class="fun-honor-item">
-          <img src="{{ '/assets/img/fun-stuff/psychological-counselor.jpg' | relative_url }}" alt="Psychological counselor certificate">
-          <figcaption>Psychological Counselor</figcaption>
-        </figure>
-        <figure class="fun-honor-item">
-          <img src="{{ '/assets/img/fun-stuff/social-etiquette-certificate.jpg' | relative_url }}" alt="Social etiquette certificate">
-          <figcaption>Social Etiquette Certificate</figcaption>
-        </figure>
-        <figure class="fun-honor-item">
-          <img src="{{ '/assets/img/fun-stuff/general-management.jpg' | relative_url }}" alt="General management certificate">
-          <figcaption>General Management</figcaption>
-        </figure>
-        <figure class="fun-honor-item">
-          <img src="{{ '/assets/img/fun-stuff/best-debater.jpg' | relative_url }}" alt="Best debater award">
-          <figcaption>Best Debater</figcaption>
-        </figure>
-        <figure class="fun-honor-item">
           <img src="{{ '/assets/img/fun-stuff/english-club-persistence-award.jpg' | relative_url }}" alt="English club persistence award">
           <figcaption>English Club Persistence Award</figcaption>
         </figure>
@@ -314,6 +290,30 @@ nav_order: 5
         <figure class="fun-honor-item">
           <img src="{{ '/assets/img/fun-stuff/alipay-populus-euphratica.jpg' | relative_url }}" alt="Ant Forest 10th anniversary certificate for planting a Populus euphratica tree">
           <figcaption>Ant Forest Populus Euphratica Certificate</figcaption>
+        </figure>
+        <figure class="fun-honor-item">
+          <img src="{{ '/assets/img/fun-stuff/security-guard-certificate.jpg' | relative_url }}" alt="Security guard certificate">
+          <figcaption>Security Guard Certificate</figcaption>
+        </figure>
+        <figure class="fun-honor-item">
+          <img src="{{ '/assets/img/fun-stuff/career-planner.jpg' | relative_url }}" alt="Career planner certificate">
+          <figcaption>Career Planner Certificate</figcaption>
+        </figure>
+        <figure class="fun-honor-item">
+          <img src="{{ '/assets/img/fun-stuff/psychological-counselor.jpg' | relative_url }}" alt="Psychological counselor certificate">
+          <figcaption>Psychological Counselor</figcaption>
+        </figure>
+        <figure class="fun-honor-item">
+          <img src="{{ '/assets/img/fun-stuff/social-etiquette-certificate.jpg' | relative_url }}" alt="Social etiquette certificate">
+          <figcaption>Social Etiquette Certificate</figcaption>
+        </figure>
+        <figure class="fun-honor-item">
+          <img src="{{ '/assets/img/fun-stuff/general-management.jpg' | relative_url }}" alt="General management certificate">
+          <figcaption>General Management</figcaption>
+        </figure>
+        <figure class="fun-honor-item">
+          <img src="{{ '/assets/img/fun-stuff/best-debater.jpg' | relative_url }}" alt="Best debater award">
+          <figcaption>Best Debater</figcaption>
         </figure>
       </div>
     </section>
